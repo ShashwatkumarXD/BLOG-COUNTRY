@@ -7,7 +7,22 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 5000;
 
-app.use(cors({ origin: 'https://blog-country-api.onrender.com', credentials: true }));
+// app.use(cors({ origin: 'https://blog-country-api.onrender.com', credentials: true }));
+
+const allowedOrigins = ['http://localhost:5173', 'https://blog-country.vercel.app'];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+}));
+
+
 app.use(bodyParser.json());
 app.use(session({
   secret: 'supersecret',
