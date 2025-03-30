@@ -130,7 +130,7 @@ const Login = ({ setUser }) => {
         Password: <span className="font-semibold">1234</span>
       </div>
 
-      <form onSubmit={handleLogin} className="w-full max-w-md">
+      <form onSubmit={handleLogin} className="w-full max-w-sm">
         <div className="flex flex-col items-center mb-6">
           <div className="flex items-center gap-2">
             <p className="text-2xl font-bold text-[#FF3B30] font-serif text-center">Welcome to The Skytrails</p>
@@ -139,16 +139,16 @@ const Login = ({ setUser }) => {
           <p className="text-sm text-[#404040] text-center">Sign in to your account or create a new one</p>
         </div>
 
-        <p className="text-lg font-semibold text-center mb-4">LOGIN</p>
+        <p className="text-base font-semibold text-center mb-4">LOGIN</p>
 
         {error && (
           <div className="text-red-600 text-sm text-center mb-2">{error}</div>
         )}
 
-        <div className="mb-4">
-          <label className="block font-serif mb-1">Username</label>
+        <div className="mb-3">
+          <label className="block text-sm font-serif mb-1">Username</label>
           <input
-            className="w-[70%] p-2 border border-[#FF3B30] outline-none rounded"
+            className="w-full px-3 py-1.5 border border-[#FF3B30] outline-none rounded text-sm"
             type="text"
             placeholder="Username"
             value={username}
@@ -156,10 +156,10 @@ const Login = ({ setUser }) => {
           />
         </div>
 
-        <div className="mb-4">
-          <label className="block font-serif mb-1">Password</label>
+        <div className="mb-3">
+          <label className="block text-sm font-serif mb-1">Password</label>
           <input
-            className="w-[70%] p-2 border border-[#FF3B30] outline-none rounded"
+            className="w-full px-3 py-1.5 border border-[#FF3B30] outline-none rounded text-sm"
             type="password"
             placeholder="*****"
             value={password}
@@ -169,7 +169,7 @@ const Login = ({ setUser }) => {
 
         <button
           type="submit"
-          className="w-[70%] p-2 bg-[#FF3B30] text-white font-semibold rounded hover:bg-[#e13229] transition"
+          className="w-full px-3 py-1.5 text-sm bg-[#FF3B30] text-white font-medium rounded hover:bg-[#e13229] transition"
         >
           Login
         </button>
@@ -181,7 +181,7 @@ const Login = ({ setUser }) => {
         <TfiLayoutLineSolid className="mt-0.5" />
       </div>
 
-      <div className="flex justify-center items-center gap-10 pt-6 text-[#404040]">
+      <div className="flex justify-center items-center gap-10 pt-6 text-[#404040] text-sm">
         <div className="flex items-center gap-2 cursor-pointer hover:text-[#FF3B30] transition">
           <FaChrome />
           <span>Google</span>
