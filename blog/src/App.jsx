@@ -10,6 +10,7 @@ function App() {
 
   useEffect(() => {
     fetch('https://blog-country-api.onrender.com/me', {
+      method: 'GET',
       credentials: 'include'
     })
       .then(res => res.json())
