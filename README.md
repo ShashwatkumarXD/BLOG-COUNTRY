@@ -71,16 +71,9 @@ This project is licensed under the MIT License.
 ---
 
 ## ScreenShot
-<p align="center">
-  <img src="Screenshot 2025-03-30 163813.png">
-</p>
-<p align="center">
-  <img src="Screenshot 2025-03-30 163831.png">
-</p>
-<p align="center">
-  <img src="Screenshot 2025-03-30 163902.png">
-</p>
-<p align="center">
-  <img src="Screenshot 2025-03-30 163909.png">
-</p>
+
+![Website Screenshot 1](https://github.com/ShashwatkumarXD/BLOG-COUNTRY/blob/main/blog/public/Screenshot%202025-03-30%20163813.png)
+![Website Screenshot 2](https://github.com/ShashwatkumarXD/BLOG-COUNTRY/blob/main/blog/public/Screenshot%202025-03-30%20163831.png)
+![Website Screenshot 3](https://github.com/ShashwatkumarXD/BLOG-COUNTRY/blob/main/blog/public/Screenshot%202025-03-30%20163902.png)
+![Website Screenshot 4](https://github.com/ShashwatkumarXD/BLOG-COUNTRY/blob/main/blog/public/Screenshot%202025-03-30%20163902.png)
 Made with ❤️ by [Shashwat Kumar XD](https://github.com/ShashwatkumarXD/)
