@@ -9,7 +9,7 @@ const PORT = 5000;
 
 // app.use(cors({ origin: 'https://blog-country-api.onrender.com', credentials: true }));
 
-const allowedOrigins = ['http://localhost:5173', 'https://blog-country.vercel.app'];
+const allowedOrigins = ['http://localhost:5173', 'https://blog-country-api.onrender.com'];
 
 app.use(cors({
   origin: function (origin, callback) {
