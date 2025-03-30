@@ -148,7 +148,7 @@ const Login = ({ setUser }) => {
         <div className="mb-4">
           <label className="block font-serif mb-1">Username</label>
           <input
-            className="w-full p-2 border border-[#FF3B30] outline-none rounded"
+            className="w-[70%] p-2 border border-[#FF3B30] outline-none rounded"
             type="text"
             placeholder="Username"
             value={username}
@@ -159,7 +159,7 @@ const Login = ({ setUser }) => {
         <div className="mb-4">
           <label className="block font-serif mb-1">Password</label>
           <input
-            className="w-full p-2 border border-[#FF3B30] outline-none rounded"
+            className="w-[70%] p-2 border border-[#FF3B30] outline-none rounded"
             type="password"
             placeholder="*****"
             value={password}
@@ -169,7 +169,7 @@ const Login = ({ setUser }) => {
 
         <button
           type="submit"
-          className="w-full p-2 bg-[#FF3B30] text-white font-semibold rounded hover:bg-[#e13229] transition"
+          className="w-[70%] p-2 bg-[#FF3B30] text-white font-semibold rounded hover:bg-[#e13229] transition"
         >
           Login
         </button>
