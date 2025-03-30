@@ -9,7 +9,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/me', {
+    fetch('https://blog-country-api.onrender.com/me', {
       credentials: 'include'
     })
       .then(res => res.json())

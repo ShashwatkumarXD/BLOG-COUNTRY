@@ -7,7 +7,7 @@ import { IoIosExit } from "react-icons/io";
 function Navbar() {
 
     const handleLogout = async () => {
-        await fetch('http://localhost:5000/logout', {
+        await fetch('https://blog-country-api.onrender.com/logout', {
             method: 'POST',
             credentials: 'include'
         });
@@ -24,7 +24,7 @@ function Navbar() {
                 <div className='flex justify-center items-center gap-5'>
                     <div className='flex items-center border-1 text-sm rounded-full text-[#FF3B30] pl-3'>
                         <IoIosSearch className="text-[#FF3B30] text-xl cursor-pointer" />
-                        <input type='text' placeholder='Search your destination here' className='w-xs p-2 text-[#FF3B30] outline-none' />
+                        <input type='text' placeholder='Search your destination here' className='w-xs p-2 text-[#FF3B30] outline-0' />
                     </div>
                     <button onClick={handleLogout} className="p-2 text-xl text-[#FF3B30] font-semibold flex flex-row justify-center items-center gap-1"><IoIosExit /> Logout</button>
                 </div>

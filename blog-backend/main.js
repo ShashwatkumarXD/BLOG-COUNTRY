@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 5000;
 
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: 'https://blog-country-api.onrender.com', credentials: true }));
 app.use(bodyParser.json());
 app.use(session({
   secret: 'supersecret',
@@ -20,6 +20,7 @@ const USER = { username: 'admin', password: '1234' };
 
 // Login endpoint
 app.post('/login', (req, res) => {
+  console.log("login called");
   const { username, password } = req.body;
   if (username === USER.username && password === USER.password) {
     req.session.user = { username };
